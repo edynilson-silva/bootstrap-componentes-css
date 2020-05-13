@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+    <title>TreinaWeb - Bootstrap 4: Componentes CSS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- bg-light navbar-light | bg-dark navbar-dark | navbar-dark bg-primary  -->
+    <!-- Posicionamento: fixed-top | fixed-bottom -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="https://getbootstrap.com/docs/4.3/assets/brand/bootstrap-solid.svg" alt="" width="30" height="30"
+                class="d-inline-block align-top">
+            TreinaWeb - Bootstrap
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudo-navbar"
+            aria-controls="conteudo-navbar" aria-expanded="false" aria-label="Botão para expansão do menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudo-navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sair</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbar-dropdown" role="button"
+                        data-toggle="dropdown">Cadastros</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Clientes</a>
+                        <a href="#" class="dropdown-item">Fornecedores</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Usuários</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Configurações</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2">
+                <input type="search" class="form-control" placeholder="Pesquisa">
+                <button type="submit" class="btn btn-outline-success ml-2">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hello, World!</h1>
+            <p class="lead">Essa página faz muitas coisas!</p>
+            <hr class="mr-4">
+            <p>Essa aplicação utiliza o Bootstrap 4</p>
+            <a href="#" class="btn btn-primary btn-lg" role="button">Aprender mais!</a>
+        </div>
+
+        <div class="card mb-3">
+            <div class="card-header">
+                <h1 class="display-5">Título!</h1>
+            </div>
+            <div class="card-body">
+                <p>Descrição</p>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <img src="http://primazzo.com.br/content/2018/09/cadastro-de-clientes-imagem4-large.jpg" alt=""
+                class="card-img-top img-fluid">
+            <div class="card-body">
+                <h5 class="card-title">Cadastro de clientes</h5>
+                <p class="card-text">Aqui você pode cadastrar clientes...</p>
+                <p class="card-text">Outro card-text</p>
+                <a href="#" class="btn btn-primary" role="button">Clique aqui!</a>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="" class="col-form-label col-form-label-lg">E-mail:</label>
+                    <input type="email" class="form-control form-control-lg">
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="" class="col-form-label col-form-label-lg">Senha:</label>
+                    <input type="password" class="form-control form-control-lg">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="" class="col-form-label">Estado:</label>
+                    <select class="form-control">
+                        <option>São Paulo</option>
+                        <option>Rio de Janeiro</option>
+                        <option>Minas Gerais</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-6 col-sm-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input">
+                        <label for="" class="form-check-label">Clique aqui</label>
+                    </div>
+                </div>
+                <div class="form-row">
+                   <fieldset class="form-group">
+                       <div class="row">
+                           <legend class="col-form-label">Sexo:</legend>
+                           <div class="col-md-10">
+                               <div class="form-check">
+                                   <input type="radio" class="form-check-input" value="0">
+                                   <label for="" class="form-check-label">Masculino</label>
+                               </div>
+                               <div class="form-check">
+                                <input type="radio" class="form-check-input" value="1">
+                                <label for="" class="form-check-label">Feminino</label>
+                            </div>
+                           </div>
+                       </div>
+                   </fieldset>
+                </div>
+
+
+            </div>
+        </form>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
